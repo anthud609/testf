@@ -1,4 +1,9 @@
 <?php
+/**
+ * /app/core/bootstrap.php
+ * Employee Routes
+ */
+
 declare(strict_types=1);
 
 ini_set('display_errors', '1');
