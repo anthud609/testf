@@ -9,10 +9,10 @@ use Bims\Core\Router;
 Router::get('/employee', function () {
     echo "Employee Dashboard";
 });
+use Bims\Modules\Employee\Controllers\EmployeeController;
 
-Router::get('/employee/profile', function () {
-    echo "Employee Profile Page";
-});
+Router::get('/employee/profile', [EmployeeController::class, 'profile']);
+
 
 Router::post('/employee/profile/update', function () {
     echo "Updating profile...";
