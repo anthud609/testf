@@ -160,10 +160,9 @@
       x-data="{ openSection: null }"
       class="
         w-64 bg-gray-50 border-r border-gray-200 shadow-inner py-4 flex-shrink-0
-        fixed inset-y-0 left-0 z-50 transform transition-transform duration-300
+        fixed inset-y-0 left-0 z-40 transform transition-transform duration-300
         -translate-x-full             /* Hide off-canvas by default on small screens */
         lg:relative lg:translate-x-0  /* Normal position on lg+ */
-        lg:z-auto
         overflow-y-auto
         h-full                        /* Ensures the aside fills height and can scroll */
       "
@@ -1336,8 +1335,5 @@
     window.addEventListener('load', resizeAvatar);
     window.addEventListener('resize', resizeAvatar);
   </script>
-</body>
-</html>
-
 </body>
 </html>
